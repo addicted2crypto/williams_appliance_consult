@@ -4,7 +4,7 @@ import WidthWrapper from './components/WidthWrapper'
 export default function Home() {
   return (
     
-   <WidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+   <WidthWrapper className="mb-12 mt-28 sm:mt-40 bg-slate-100 flex flex-col items-center justify-center text-center">
      
       <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-400 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-500 hover:bg-white/25">
         <p className='text-sm font-semibold text-gray-900'>
@@ -12,7 +12,7 @@ export default function Home() {
         </p>
       </div>
       <h1 className='max-w-6xl text-5xl font-bold md:text-6xl lg:text-7xl'>
-        Schedule your consult<span className='text-blue-700'> before wasting over <span className="text-green-600"> $$$$ </span></span> on a in person diagnostic.
+        Schedule your consult<span className='text-red-700'> before wasting <span className="text-green-600"> $$$$ </span></span> on a in person diagnostic.
       </h1>
       <p className='mt-6 max-w-pros text-zinc-800 sm:text-lg'>
         William's Consult app allows you to upload pictures as PDF documents. 
