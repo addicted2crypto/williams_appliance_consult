@@ -1,11 +1,11 @@
-import Image from 'app/appliance_logo.png'
+
 import WidthWrapper from './components/WidthWrapper'
 
 export default function Home() {
   return (
     
    <WidthWrapper className="mb-12 mt-28 sm:mt-40 bg-slate-100 flex flex-col items-center justify-center text-center">
-     
+    
       <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-400 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-500 hover:bg-white/25">
         <p className='text-sm font-semibold text-gray-900'>
           William's Appliance Consult is now live!
@@ -20,7 +20,7 @@ export default function Home() {
         with your appliance. This info is crucial so I can properly daignose your machine, and save you time and money!
       </p>
       <p className='mt-4 max-w-pros text-zinc-600 sm:text-lg'>
-        Is your appliance acting up? Did it stop working? Do you have a warranty on it? Schedule a consult and we 
+        Is your Appliance acting up? Did it abruptly stop working? Do you see a error code? Do you have a warranty on it? Schedule a consult and we 
         will go over what is feasable. 
       </p>
     </WidthWrapper>
