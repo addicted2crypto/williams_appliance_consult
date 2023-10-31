@@ -8,7 +8,7 @@ export default function Home() {
      
       <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-400 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-500 hover:bg-white/25">
         <p className='text-sm font-semibold text-gray-900'>
-          William's Applicance Consult is now live!
+          William's Appliance Consult is now live!
         </p>
       </div>
       <h1 className='max-w-6xl text-5xl font-bold md:text-6xl lg:text-7xl'>
