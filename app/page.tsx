@@ -27,7 +27,11 @@ export default function Home() {
         Is your Appliance acting up? Did it abruptly stop working? Do you see a error code? Do you have a warranty on it? Schedule a consult and we 
         will go over what is feasable. 
       </p>
-      <Link className={buttonVariants()}href='/dashboard' target='_blank'>
+      <Link className={buttonVariants({
+        size: 'lg',
+        className: 'mt-14'
+        
+      })}href='/dashboard' target='_blank'>
         Schedule Apt <ArrowRight className='ml-2 h-5 w-5'/>
       </Link>
     </WidthWrapper>
