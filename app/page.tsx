@@ -31,7 +31,7 @@ export default function Home() {
       </p>
       <Link className={buttonVariants({
         size: 'lg',
-        className: 'mt-14'
+        className: 'mt-16'
         
       })}href='/dashboard' target='_blank'>
         Schedule Apt <ArrowRight className='ml-2 h-5 w-5'/>
