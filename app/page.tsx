@@ -23,10 +23,10 @@ export default function Home() {
       <p className='mt-6 max-w-pros text-zinc-800 sm:text-lg'>
         William's Consult app allows you to upload pictures as PDF documents. 
         The app also allows for forms and text input to articulate all the issues 
-        with your appliance. This info is crucial so I can properly daignose your machine, and save you time and money!
+        with your appliance. This info is crucial so I can properly diagnose your machine, and save you time and money!
       </p>
       <p className='mt-4 max-w-pros text-zinc-600 sm:text-lg'>
-        Is your appliance causing issues or suddenly stoped working? Encountering error codes? Here's a little-know secret that the "experts" dont want you to know:
+        Is your appliance causing issues or suddenly stopped working? Encountering error codes? Here's a little-know secret that the "experts" dont want you to know:
         traditional in-person diagnostics can cost over $120.00(national diagnostic only average). The good news? With over 
         a decade of expierience, and a network of skilled technicians, I can adress these conerns remotely, saving you money. Schedule a consultation,
         and we'll efficiently resolve the issue's remotely at a fraction of the cost, without the wait for a technician.
