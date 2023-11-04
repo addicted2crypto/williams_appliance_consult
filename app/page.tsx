@@ -82,7 +82,35 @@ export default function Home() {
             <p className='mt-4 text-lg text-gray-650'>Getting a quick estimate to repair your broken appliance has never been easier/so quickly accessible.</p>
           </div>
         </div>
-
+        {/*steps*/}
+        <ol className='my-8 space-y-4 md:flex md:space-x-12 md:space-y-0'>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-p md:border-l-0 md:pb-0 md:pt-4'>
+              <span className='text-sm font-medium text-blue-900'>Step 1</span>
+              <span className='text-xl font-semibold'>Sign up for a consult</span>
+              <span className='mt-2 text-zinc-800'>Log in and create schedule a time for us to discuss your appliance.</span>
+            </div>
+          </li>
+        </ol>
+        <ol className='my-8 space-y-4 md:flex md:space-x-12 md:space-y-0'>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-p md:border-l-0 md:pb-0 md:pt-4'>
+              <span className='text-sm font-medium text-blue-900'>Step 2</span>
+              <span className='text-xl font-semibold'>Log your issues</span>
+              <span className='mt-2 text-zinc-800'>Upload text to describe your appliance problems. Upload pictures to show model/serial number without having to write it out. Upload pictures of appliance issues.</span>
+            </div>
+          </li>
+        </ol>
+        <ol className='my-8 space-y-4 md:flex md:space-x-12 md:space-y-0'>
+          <li className='md:flex-1'>
+            <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-p md:border-l-0 md:pb-0 md:pt-4'>
+              <span className='text-sm font-medium text-blue-900'>Step 3</span>
+              <span className='text-xl font-semibold'>Schedule a time window that works for your busy life</span>
+              <span className='mt-2 text-zinc-800'>Wait for me and my team to contact you.</span>
+            </div>
+          </li>
+        </ol>
+        
       </div>
 
     </>
