@@ -27,7 +27,7 @@ export default function Home() {
       </p>
       <p className='mt-4 max-w-pros text-zinc-600 sm:text-lg'>
         Is your appliance causing issues or suddenly stopped working? Encountering error codes? Here's a little-know secret that the "experts" dont want you to know:
-        traditional in-person diagnostics can cost over $120.00(national diagnostic only average). The good news is with over 
+        traditional in-person diagnostics can cost over $120.00(national diagnostic average).With that being said, the good news is with over 
         a decade of expierience and a network of skilled technicians, I can address these concerns remotely, saving you money. Schedule a consultation,
         and we'll efficiently resolve the issue's remotely at a fraction of the cost, without the wait for a technician.
       </p>
