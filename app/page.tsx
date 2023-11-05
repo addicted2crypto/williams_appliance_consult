@@ -18,7 +18,7 @@ export default function Home() {
         </p>
       </div>
       <h1 className='max-w-6xl text-5xl font-bold md:text-6xl lg:text-7xl'>
-      Appliance acting up? Schedule your consult<span className='text-red-700'> before wasting <span className="text-green-600"> $$$$ </span></span> on a in person diagnostic.
+      Appliance acting up? Schedule your consult<span className='text-red-700'> before wasting <span className="text-green-600"> $$$$ </span></span> on an in person diagnostic.
       </h1>
       <p className='mt-6 max-w-pros text-zinc-800 sm:text-lg'>
         William's Consult app allows you to upload pictures as PDF documents. 
@@ -88,7 +88,7 @@ export default function Home() {
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-p md:border-l-0 md:pb-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-900'>Step 1</span>
               <span className='text-xl font-semibold'>Sign up for a consult</span>
-              <span className='mt-2 text-zinc-800'>Log in and create schedule a time for us to discuss your appliance.</span>
+              <span className='mt-2 text-zinc-800'>Log in and schedule a time for us to discuss your appliance.</span>
             </div>
           </li>
         </ol>
