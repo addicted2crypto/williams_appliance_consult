@@ -114,7 +114,7 @@ export default function Home() {
                   <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
                     <Image 
                     src='/repairguy.jpeg'
-                    alt='WAC logo'
+                    alt='repair guy image'
                     width={1200}
                     height={1200}
                     quality={100}
