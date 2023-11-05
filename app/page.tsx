@@ -106,7 +106,7 @@ export default function Home() {
             <div className='flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-p md:border-l-0 md:pb-0 md:pt-4'>
               <span className='text-sm font-medium text-blue-900'>Step 3</span>
               <span className='text-xl font-semibold'>Schedule a time window that works for your busy life</span>
-              <span className='mt-2 text-zinc-800'>Wait for me and my team to contact you.</span>
+              <span className='mt-2 text-zinc-800'>Wait for me and my team to contact you during the timeslot you choose.</span>
             </div>
           </li>
         </ol>
