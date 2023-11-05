@@ -1,4 +1,5 @@
 import { buttonVariants } from "@/components/ui/button"
+import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/server"
 import Link from "next/link"
 import WidthWrapper from "./WidthWrapper"
 
@@ -16,8 +17,22 @@ const Navbar = () => {
                         <Link href="/price"className={buttonVariants({
                             variant: "ghost",
                             size: "sm"
-                        })}>Price</Link>
-
+                        })}>Price
+                        </Link>
+                        <LoginLink
+                        className={buttonVariants({
+                            variant: "ghost",
+                            size: "sm",
+                        })}>
+                            Sign in
+                        </LoginLink>
+                        <RegisterLink
+                        className={buttonVariants({
+                            variant: "ghost",
+                            size: "sm",
+                        })}>
+                            Register
+                        </RegisterLink>
                     </div>
                 </div>
             </WidthWrapper>
