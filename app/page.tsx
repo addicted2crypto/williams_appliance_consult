@@ -51,7 +51,7 @@ export default function Home() {
           </div>
             <div>
               <div className='mx-auto max-w-6xl px-6 lg:px-8'>
-                <div className='mt-16 floow-root sm:mt-24'>
+                <div className='mt-16 flow-root sm:mt-24'>
                   <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
                     <Image 
                     src='/appliance_logo.png'
@@ -109,6 +109,21 @@ export default function Home() {
             </div>
           </li>
         </ol>
+        <div className='mx-auto max-w-6xl px-6 lg:px-8'>
+                <div className='mt-6 flow-root sm:mt-24'>
+                  <div className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
+                    <Image 
+                    src='/repairguy.jpeg'
+                    alt='WAC logo'
+                    width={1200}
+                    height={1200}
+                    quality={100}
+                    className='rounded-md bg-[#9c9c9c] p-2 sm:p-4 md:p-20 shadow-2xl ring-1 ring-gray-950/75'
+                    />
+
+                  </div>
+                  </div>
+              </div>
         
       </div>
 
