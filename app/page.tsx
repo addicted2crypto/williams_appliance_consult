@@ -35,7 +35,7 @@ export default function Home() {
         size: 'lg',
         className: 'mt-12 mb-12'
         
-      })}href='/dashboard' target='_blank'>
+      })}href='/dachboard' target='_blank'>
         Schedule Apt <ArrowRight className='ml-2 h-5 w-5'/>
       </Link>
     </WidthWrapper>

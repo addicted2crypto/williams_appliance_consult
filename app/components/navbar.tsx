@@ -1,5 +1,6 @@
 import { buttonVariants } from "@/components/ui/button"
 import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/server"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import WidthWrapper from "./WidthWrapper"
 
@@ -28,10 +29,10 @@ const Navbar = () => {
                         </LoginLink>
                         <RegisterLink
                         className={buttonVariants({
-                            variant: "ghost",
+                            
                             size: "sm",
                         })}>
-                            Register
+                            Schedule APT<ArrowRight className='ml-3.5 h-4 w-4' />
                         </RegisterLink>
                     </div>
                 </div>
