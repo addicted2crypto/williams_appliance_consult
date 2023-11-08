@@ -7,8 +7,8 @@ export const appRouter = router({
    authCallback: publicProcedure.query(() =>{
     const {getUser} = getKindeServerSession()
     const user = getUser()
-    if(!user.id || !user.email)
-    throw new TRPCError({ code: 'UNAUTHORIZED'})
+    // if(!user.id || !user.email) need to find user.id
+    // throw new TRPCError({ code: 'UNAUTHORIZED'})
     return { success: true}
    })
     })
