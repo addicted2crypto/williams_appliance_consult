@@ -8,6 +8,7 @@ import { publicProcedure, router } from './trpc';
 export const appRouter = router({
    authCallback: publicProcedure.query (async () =>{
     const { getUser } = getKindeServerSession()
+    //await getUser?
     const User =  await getUser()
 
     if(!User.id || !User.email) 
