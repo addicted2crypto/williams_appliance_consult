@@ -7,11 +7,12 @@ import { publicProcedure, router } from './trpc';
 
 export const appRouter = router({
    authCallback: publicProcedure.query (async () =>{
+    
     const { getUser } = getKindeServerSession()
-    //await getUser?
-    const User =  await getUser()
+    const user = await getUser()
+    if(!user || !user.id) 
 
-    if(!User.id || !User.email) 
+    if(!user.id || !user.email) 
     throw new TRPCError({ code: 'UNAUTHORIZED'})
 
 
