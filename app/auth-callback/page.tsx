@@ -18,6 +18,7 @@ trpc.authCallback.useQuery(undefined, {
             router.push(origin ? `/${origin}` : '/dashboard')
         }
     },
+    //if not logged in route to sign-in
     onError: (err) => {
         if(err.data?.code ==="UNAUTHORIZED") {
             router.push("/sign-in")
