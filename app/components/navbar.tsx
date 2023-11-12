@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import WidthWrapper from "./WidthWrapper"
 
-
 const Navbar = () => {
     return (
         <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/60 backdrop-blur-lg transition-all">
