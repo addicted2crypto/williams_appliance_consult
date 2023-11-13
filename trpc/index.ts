@@ -16,8 +16,8 @@ export const appRouter = router({
   
     const dbUser = await db.user.findFirst({
         where: {
-            id: user.id
-        }
+            id: user.id,
+        },
     })
 
     if(!dbUser) {
@@ -36,4 +36,4 @@ export const appRouter = router({
 
 
 
-export type AppRouter = typeof appRouter;
+export type AppRouter = typeof appRouter
