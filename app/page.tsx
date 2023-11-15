@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import WidthWrapper from './components/WidthWrapper'
 import { ArrowRight, Divide } from "lucide-react"
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/app/components/ui/button'
 import Image from 'next/image'
 
 export default function Home() {
