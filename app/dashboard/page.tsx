@@ -6,7 +6,7 @@ import { redirect } from 'next/navigation'
 import Dashboard from '../../components/Dashboard'
 
 
-const Page = async () => {
+const Page =  async () => {
   const { getUser } = getKindeServerSession()
   const user = getUser()
   
