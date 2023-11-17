@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   </div>
               </div>
-        <div className='mx-1 text-center p-2 text-sm font-black text-black'>Coming soon. Contact <span className='text-bold font font-medium text-blue-950'>williamsapplianceconsult@gmail.com </span>with questions.</div>
+        <div className='mx-1 text-center p-2 text-sm font-black text-black'>Coming soon. Contact <span className='text-bold font font-medium text-blue-950'>williamsapplianceconsult@gmail.com or william@applianceconsults.com</span>with questions.</div>
       </div>
 
     </>
