@@ -1,9 +1,10 @@
 
 import Link from 'next/link'
-import WidthWrapper from './components/WidthWrapper'
+
 import { ArrowRight, Divide } from "lucide-react"
-import { buttonVariants } from '@/app/components/ui/button'
+import { buttonVariants } from '@/src/components/ui/button'
 import Image from 'next/image'
+import WidthWrapper from '../components/WidthWrapper'
 
 export default function Home() {
   return (
@@ -124,7 +125,7 @@ export default function Home() {
                   </div>
                   </div>
               </div>
-        <div className='mx-1 text-center p-2 text-sm font-black text-black'>Coming soon. Contact <span className='text-bold font font-medium text-blue-950'>williamsapplianceconsult@gmail.com or william@applianceconsults.com</span>with questions.</div>
+        <div className='mx-1 text-center p-2 text-sm font-black text-black'>Coming soon. Contact <span className='text-bold font font-medium text-blue-950'>williamsapplianceconsult@gmail.com or william@applianceconsults.com</span> with questions.</div>
       </div>
 
     </>
