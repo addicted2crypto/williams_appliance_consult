@@ -17,13 +17,7 @@ const dbUser = await db.user.findFirst({
 })
 
 
-  if(!dbUser) {
-    await db.user.create({
-      data: user.id,
-      email: user.email,
-    
-    })
-  }
+  if(!dbUser)redirect('/auth-callback?origin=dashboard')
   
 
   return (
