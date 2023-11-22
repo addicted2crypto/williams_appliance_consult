@@ -1,6 +1,6 @@
 const Dashboard = () => {
     return (
-    <div> Pay scale and db for customer information incoming!</div>
+    <div className="pt-5"> Pay scale and db for customer information incoming!</div>
         
     )
     

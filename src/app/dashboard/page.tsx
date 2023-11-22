@@ -14,14 +14,15 @@ const Page = async () => {
  
 
   if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
-const dbUser = await db.user.findFirst({
+  if(!user)console.log('no user')
+  const dbUser = await db.user.findFirst({
   where: {
     id: user.id
   }
 })
 
 
-  if(!dbUser)redirect('/auth-callback?origin=dashboard')
+  if(!dbUser)console.log('it didnt work')
   
 
   return (
