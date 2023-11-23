@@ -9,8 +9,7 @@
 //   const endpoint = params.kindeAuth
 //   return handleAuth(request, endpoint)
 // }
-
-
+// src/app/api/auth/[kindeAuth]/route.ts
 import { handleAuth, AuthResult } from '@kinde-oss/kinde-auth-nextjs/server';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -21,4 +20,5 @@ const handler = async (request: NextRequest, { params }: any): Promise<void | Ne
 };
 
 export default handler;
+
 
