@@ -24,7 +24,7 @@ export const appRouter = router({
     // check if the user is in the database
     const dbUser = await db.user.findFirst({
       where: {
-        id: user.id
+        id: user.id,
       },
     })
 
