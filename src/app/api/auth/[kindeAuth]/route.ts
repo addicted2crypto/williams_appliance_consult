@@ -1,14 +1,30 @@
 
-import { handleAuth } from '@kinde-oss/kinde-auth-nextjs/server'
-import { NextRequest } from 'next/server'
+// import { handleAuth } from '@kinde-oss/kinde-auth-nextjs/server'
+// import { NextRequest } from 'next/server'
 
-export async function GET(
-  request: NextRequest,
-  { params }: any
-) {
+// export async function GET(
+//   request: NextRequest,
+//   { params }: any
+// ) {
+//   const endpoint = params.kindeAuth
+//   return handleAuth(request, endpoint)
+// }
+
+
+import { handleAuth } from '@kinde-oss/kinde-auth-nextjs/server'
+import { NextApiRequest } from 'next'
+
+
+
+
+export default async function handler(
+  request: Request | NextApiRequest,
+  response: Response | NextApiResponse<any>
+): Promise<void | Response | NextApiResponse<any>> {
   const endpoint = params.kindeAuth
   return handleAuth(request, endpoint)
 }
+
 // src/app/api/auth/[kindeAuth]/route.ts
 // import { handleAuth, AuthResult } from '@kinde-oss/kinde-auth-nextjs/server';
 // import { NextRequest, NextResponse } from 'next/server';
