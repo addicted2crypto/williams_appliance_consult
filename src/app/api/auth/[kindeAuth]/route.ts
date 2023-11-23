@@ -13,13 +13,6 @@
 
 import { handleAuth } from '@kinde-oss/kinde-auth-nextjs/server'
 import { NextApiRequest } from 'next'
-
-
-
-
-
-
-
 export default async function handler(
   req: Request | NextApiRequest,
   res: Response | NextApiResponse<any>
