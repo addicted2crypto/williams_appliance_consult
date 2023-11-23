@@ -18,6 +18,8 @@ import { NextApiRequest } from 'next'
 
 
 
+
+
 export default async function handler(
   req: Request | NextApiRequest,
   res: Response | NextApiResponse<any>
@@ -25,6 +27,7 @@ export default async function handler(
   const endpoint = params.kindeAuth
   return handleAuth(request, endpoint)
 }
+
   
 
 
