@@ -24,7 +24,7 @@ export default async function handler(
 ): Promise<void | Response | NextApiResponse<any>> {
   const endpoint = params.kindeAuth
   return handleAuth(request, endpoint)
-// }
+}
   
 
 
