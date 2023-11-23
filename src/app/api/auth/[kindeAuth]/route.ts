@@ -17,13 +17,16 @@ import { NextApiRequest } from 'next'
 
 
 
+
 export default async function handler(
   req: Request | NextApiRequest,
   res: Response | NextApiResponse<any>
 ): Promise<void | Response | NextApiResponse<any>> {
   const endpoint = params.kindeAuth
-    return handleAuth(request, endpoint)
-}
+  return handleAuth(request, endpoint)
+// }
+  
+
 
 // src/app/api/auth/[kindeAuth]/route.ts
 // import { handleAuth, AuthResult } from '@kinde-oss/kinde-auth-nextjs/server';
