@@ -13,11 +13,11 @@ export default function Home() {
    <WidthWrapper className="mb-12 mt-28 sm:mt-40 bg-slate-300 flex flex-col items-center justify-center text-center">
 
     
-      <div className="mt-4 Smx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-400 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-800 hover:bg-white/30">
-        <p className='text-sm font-semibold text-gray-900'>
+      <p className="mt-4 Smx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-400 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-800 hover:bg-white/30">
+        <span className='text-sm font-semibold text-gray-900'>
           William's Appliance Consult is now live!
-        </p>
-      </div>
+        </span>
+      </p>
       <h1 className='max-w-6xl text-5xl font-bold md:text-6xl lg:text-7xl'>
       Appliance acting up? Schedule your consult<span className='text-red-700'> before wasting <span className="text-green-600"> $$$$ </span></span> on an in person diagnostic.
       </h1>

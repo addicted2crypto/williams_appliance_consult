@@ -9,25 +9,41 @@ const Page = async () => {
   const {getUser}  = getKindeServerSession()
   const user = await getUser()
   
- {user? console.log(user.id) : console.log('no user')}
+ {user? console.log(user.id) : console.log('no user')};
  //this console log returned my kinde user id... i need to sync it to the dbUser id
  
 
   if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
-  if(!user)console.log('no user')
+  
+  
   const dbUser = await db.user.findFirst({
   where: {
     id: user.id
+    
+ 
   }
-})
+  })
 
+if(!dbUser) {
+  await db.user.create({
+    data: {
+      id: user.id,
+      email: user.email,
+      
+      
+     
+    }
+  })
 
-  if(!dbUser)console.log('it didnt work')
+}
+
   
 
   return (
-  <p className="text-2xl mb-2">Welcome, {user?.email}<Dashboard  /> </p>
+  <div className="text-2xl mb-2">Welcome, {user.email}<Dashboard  /> </div>
   )
 }
+
+
 
 export default Page
