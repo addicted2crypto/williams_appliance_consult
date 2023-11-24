@@ -23,7 +23,7 @@ model User {
   
 }
 
-enum contactStatus {
+enum UploadStatus {
   PENDING
   PROCESSING
   FAILED
@@ -35,7 +35,7 @@ model File {
   id String @id @default(cuid())
   name String
 
-  contactStatus contactStatus @default(PENDING)
+  uploadStatus UploadStatus @default(PENDING)
 
   url String
   key String
