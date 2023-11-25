@@ -1,10 +1,7 @@
 "use client"
-import {
-  privateProcedure,
-  publicProcedure, 
-  router,
-  
-} from './trpc'
+
+
+import {privateProcedure,publicProcedure, router,} from './trpc'
 import { TRPCError } from '@trpc/server'
 import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
@@ -19,7 +16,7 @@ export const appRouter = router({
     const user = await getUser()
     
 
-    if (!user.id || user == null || !user.email)
+    if (!user?.id || user == null || !user.email)
       throw new TRPCError({ code: 'UNAUTHORIZED' })
     
     // check if the user is in the database

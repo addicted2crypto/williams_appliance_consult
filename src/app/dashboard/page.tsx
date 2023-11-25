@@ -9,7 +9,7 @@ const Page = async () => {
   const {getUser}  = getKindeServerSession()
   const user = await getUser()
   
- {user? console.log(user.id) : console.log('no user')};
+ {user? console.log(user.email) : console.log('no user')};
  //this console log returned my kinde user id... i need to sync it to the dbUser id
  
 
@@ -20,22 +20,20 @@ const Page = async () => {
   where: {
     id: user.id
     
- 
   }
+ 
   })
-
-// if(!dbUser) {
-//   await db.user.create({
-//     data: {
-//       id: user.id,
-//       email: user.email,
-      
-      
-     
-    }
-  })
-
+if(!dbUser){
+  <span>Please log this user to the DB</span>
 }
+// if(!dbUser) redirect('/auth-callback?origin=dashboard');
+  
+    
+      
+
+  
+
+
 
   
 

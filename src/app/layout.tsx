@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: `William's Appliance Consult`,
-  description: 'Why pay for a repair in person again',
+  description: 'Why pay for a repair in person again/appliance repair made easy',
 }
 
 export default function RootLayout({
