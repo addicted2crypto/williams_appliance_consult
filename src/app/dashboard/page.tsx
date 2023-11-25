@@ -16,7 +16,7 @@ const Page = async () => {
   if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
   
   
-  const dbUser = await db.user.findFirst({
+  const dbUser = await db?.user.findFirst({
   where: {
     id: user.id
     
@@ -24,11 +24,11 @@ const Page = async () => {
   }
   })
 
-if(!dbUser) {
-  await db.user.create({
-    data: {
-      id: user.id,
-      email: user.email,
+// if(!dbUser) {
+//   await db.user.create({
+//     data: {
+//       id: user.id,
+//       email: user.email,
       
       
      
