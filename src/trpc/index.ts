@@ -28,7 +28,7 @@ export const appRouter = router({
 
     if (!dbUser) {
       // create user in db
-      await db.user.create({
+       db.user.create({
         data: {
           id: user.id,
           email: user.email,
@@ -41,7 +41,7 @@ export const appRouter = router({
 
   getUserFiles: privateProcedure.query(async ({ctx}) => {
     const {userId} = ctx
-
+    //this is supposed to be an await but this adds a error of extra attributes from the server
     return db.file.findMany({
       where: {
         userId

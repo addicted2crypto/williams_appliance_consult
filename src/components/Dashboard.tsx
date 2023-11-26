@@ -12,7 +12,7 @@ const Dashboard = () => {
     return (
     <main className="mx-auto max-w-7xl md:p-10">
         <div className="mt-8 flex flex-col justify-between gap-4 border-b border=gray-200 pb-5 sm:flex-row sm:items-center sm:gap-0">
-            <h1 className="mb-3 text-5xl font-bold text-gray-950">My appliance
+            <h1 className="mb-3 text-5xl font-bold text-gray-950">
            Current appliances on file:
             
             </h1>
@@ -35,7 +35,11 @@ const Dashboard = () => {
                         <Link href={`/dashboard/${file.id}`}className="flex flex-col gap-2">
                         
                             <div className="pt-6 px-6 flex w-full items-center justify-between space-x-6">
-                                <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-900" />
+                             <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-900" />
+                              <div className="flex-1 truncate"></div>
+                               <div className="flex items-center space-x-3">
+                                <h3 className="truncate text-lg font-medium text-zinc-950">{file.name}</h3>
+                               </div>
                             </div>
                         </Link>
                         
@@ -49,6 +53,8 @@ const Dashboard = () => {
             <Ghost className="h-8 w-8 text-zinc-800"/>
             <h3 className="font-semibold tx-xl">No appliances yet</h3>
             <p>Lets&apos;s upload your appliance</p>
+            
+           
          </div>
         )}
 

@@ -2,6 +2,7 @@
 import Dashboard from '@/src/components/Dashboard'
 import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
+import { DevBundlerService } from 'next/dist/server/lib/dev-bundler-service';
 
 import { redirect } from 'next/navigation'
 
@@ -11,7 +12,7 @@ const Page = async () => {
   
  {user? console.log(user.email) : console.log('no user')};
  //this console log returned my kinde user id... i need to sync it to the dbUser id
- 
+
 
   if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
   
@@ -19,7 +20,6 @@ const Page = async () => {
   const dbUser = await db?.user.findFirst({
   where: {
     id: user.id
-    
   }
  
   })
