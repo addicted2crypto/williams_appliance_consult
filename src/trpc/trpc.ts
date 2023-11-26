@@ -1,4 +1,4 @@
-import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/dist/types/server';
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/dist/types/components';
 import { initTRPC, TRPCError } from '@trpc/server'
 
 const t = initTRPC.create();
