@@ -1,11 +1,12 @@
 "use client"
 
-import { trpc } from "@/_trpc/client"
+import { trpc } from "../app/_trpc/client"
 import { Ghost } from "lucide-react"
 import UploadFileButton from "./UploadFileButton"
 import Skeleton from "react-loading-skeleton"
 import Link from "next/link"
 import {format} from "date-fns"
+
 
 
 // This is the dashboard component that will display the appliances that the user has uploaded
