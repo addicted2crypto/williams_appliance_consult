@@ -2,19 +2,21 @@
 import Dashboard from '@/src/components/Dashboard'
 import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
-import { DevBundlerService } from 'next/dist/server/lib/dev-bundler-service';
+import { User } from 'lucide-react';
 
 import { redirect } from 'next/navigation'
 
 const Page = async () => {
-  const {getUser}  = getKindeServerSession()
-  const user = await getUser()
+  const {getUser}  = getKindeServerSession();
+  const user = await getUser();
   
- {user? console.log(user.email) : console.log('no user')};
+ {user? console.log(user.email)  : console.log('no user')};
+ {user? console.log(user.id)  : console.log('no user')};
+
  //this console log returned my kinde user id... i need to sync it to the dbUser id
 
 
-  if (!user || !user.id) redirect('/auth-callback?origin=dashboard')
+  if (!user || !user.id) redirect('/auth-callback?origin=dashboard');
   
   
   const dbUser = await db?.user.findFirst({
@@ -22,9 +24,10 @@ const Page = async () => {
     id: user.id
   }
  
-  })
+  });
 if(!dbUser){
-  <span>Please log this user to the DB</span>
+  <span>Please log this user to the DB </span>
+  
 }
 // if(!dbUser) redirect('/auth-callback?origin=dashboard');
   

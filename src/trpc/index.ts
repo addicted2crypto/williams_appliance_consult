@@ -1,4 +1,4 @@
-"use client"
+
 
 
 import {privateProcedure,publicProcedure, router,} from './trpc'
@@ -38,15 +38,14 @@ export const appRouter = router({
   
     return { success: true }
   }),
-
-  getUserFiles: privateProcedure.query(async ({ctx}) => {
-    const {userId} = ctx
+    getUserFiles: privateProcedure.query(async ({ ctx }) => {
+      const { user } = ctx
     //this is supposed to be an await but this adds a error of extra attributes from the server
-    return db.file.findMany({
+    return await db.file.findMany({
       where: {
-        userId
-    }
-   })
+        id: user.id,
+    },
+   },)
   }),
 })
 
