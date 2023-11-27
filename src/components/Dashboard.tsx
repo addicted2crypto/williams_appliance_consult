@@ -1,7 +1,7 @@
 "use client"
 
 import { trpc } from "../app/_trpc/client"
-import { Ghost } from "lucide-react"
+import { Ghost, MessageSquare, Plus } from "lucide-react"
 import UploadFileButton from "./UploadFileButton"
 import Skeleton from "react-loading-skeleton"
 import Link from "next/link"
@@ -47,11 +47,21 @@ const Dashboard = () => {
                              <div className="h-10 w-10 flex-shrink-0 rounded-full bg-gradient-to-r from-cyan-500 to-blue-900" />
                               <div className="flex-1 truncate"></div>
                                <div className="flex items-center space-x-3">
-                                <h3 className="truncate text-lg font-medium text-zinc-950">{file.name}</h3>
+                                <h3 className="truncate text-lg font-medium text-zinc-950">
+                                  {file.name}
+                                  </h3>
                                </div>
                             </div>
                         </Link>
-                        
+                        <div className="px-6 mt-4 grid grid-cols-3 py-2 gap-6 text-xs text-zinc-500">
+                          <div className="flex items-center gap-2">
+                            <Plus className="h-4 w-4"/>
+                            {format(new Date(file.createdAt), "MMM yyyy")}
+                          </div>
+                        </div>
+                        <div>
+                         <MessageSquare className='h-4 w-4'/>
+                        </div>
                    </li>
                 ))}
             </ul>
