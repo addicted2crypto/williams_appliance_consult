@@ -79,6 +79,7 @@ const Dashboard = () => {
             <Ghost className="h-8 w-8 text-zinc-900"/>
             <h3 className="font-semibold tx-xl">No appliances</h3>
             <p>Lets&apos;s upload your appliance</p>
+            
            
             
             
