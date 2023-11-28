@@ -4,6 +4,7 @@ import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 
 import { redirect } from 'next/navigation'
+import { fileURLToPath } from 'url';
 
 const Page = async () => {
   const {getUser}  = getKindeServerSession();
@@ -11,6 +12,7 @@ const Page = async () => {
   
  {user? console.log(user.email)  : console.log('no user')};
  {user? console.log(user.id)  : console.log('no user')};
+
  
 
  //this console log returned my kinde user id... i need to sync it to the dbUser id
