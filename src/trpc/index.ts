@@ -5,7 +5,7 @@ import {privateProcedure,publicProcedure, router,} from './trpc'
 import { TRPCError } from '@trpc/server'
 import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
-import { fileURLToPath } from 'url'
+
 
 
 
@@ -39,17 +39,17 @@ export const appRouter = router({
     return { success: true };
   }),
     getUserFiles: privateProcedure.query(async ({ ctx }) => {
-      const { user } = ctx
+      const { userId } = ctx
     //this is supposed to be an await but this adds a error of extra attributes from the server
     const files = await db.file.findMany({
       where: {
-        userId: user.id,
-        id: user.id,
+        userId,
+        
         
     },
 
    });
-   return files;
+    return files;
   }),
 })
 
