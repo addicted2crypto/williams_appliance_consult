@@ -1,5 +1,5 @@
 import { buttonVariants } from "@/components/ui/button"
-import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/server"
+import { LoginLink, LogoutLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/server"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import WidthWrapper from "./WidthWrapper"
@@ -14,6 +14,16 @@ const Navbar = () => {
                       {/*add logo */}
                     </Link>
                     <div className="hidden items-center space-x-4 sm:flex hover:bg-slate-300">
+                        {/* // todo -> fix log out link */}
+                        
+                    {/* <LogoutLink 
+                        className={buttonVariants({
+                            variant: "ghost",
+                            size: "sm",
+                        })}>
+                            Sign out 
+                            </LogoutLink> */}
+                       
                         <Link href="/price"className={buttonVariants({
                             variant: "ghost",
                             size: "sm"
@@ -33,6 +43,7 @@ const Navbar = () => {
                         })}>
                             Schedule APT<ArrowRight className='ml-3.5 h-4 w-4' />
                         </RegisterLink>
+                       
                     </div>
                 </div>
             </WidthWrapper>
