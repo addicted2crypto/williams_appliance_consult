@@ -7,6 +7,7 @@ const middleware = t.middleware;
 
 const isAuth = middleware(async (opts) => {
     const {getUser} = getKindeServerSession();
+    //need to find a way to get this without using await dummy
     const user = await getUser();
  
     if (!user || !user.id || !user.email){
