@@ -8,9 +8,6 @@ import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server'
 
 
 
-
-
-
 export const appRouter = router({
   authCallback: publicProcedure.query(async () => {
     const {getUser} = getKindeServerSession();
@@ -38,18 +35,17 @@ export const appRouter = router({
   
     return { success: true };
   }),
+    //get user uploaded files(appliances in db)
     getUserFiles: privateProcedure.query(async ({ ctx }) => {
       const { userId } = ctx
-    //this is supposed to be an await but this adds a error of extra attributes from the server
-    const files = await db.file.findMany({
-      where: {
-        userId,
-        
-        
-    },
-
+  
+      return await db.file.findMany({
+        where: {
+          userId,
+        },
+      
    });
-    return files;
+    
   }),
 })
 
