@@ -1,4 +1,5 @@
 
+import WidthWrapper from '@/components/WidthWrapper';
 import Dashboard from '@/src/components/Dashboard'
 import { db } from '@/src/db'
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
@@ -43,7 +44,9 @@ const Page = async () => {
   
 
   return (
+    <WidthWrapper>
   <div className="text-2xl mb-2">Welcome, {user.email}<Dashboard  /> </div>
+  </WidthWrapper>
   )
 }
 
