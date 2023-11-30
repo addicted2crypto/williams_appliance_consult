@@ -40,7 +40,7 @@ const Dashboard = () => {
                 key={file.id}
                 className='col-span-1 divide-y divide-gray-200 rounded-lg bg-white shadow transition hover:shadow-lg'>
                 <Link
-                  href={`/dashboard/${file.id}`}
+                  href={`?file=${file}`}
                   className='flex flex-col gap-2'>
         
         
