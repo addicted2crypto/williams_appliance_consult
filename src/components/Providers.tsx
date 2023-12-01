@@ -8,6 +8,7 @@ import { trpc } from "@/_trpc/client"
 
 
 
+
 const Providers = ({ children }: PropsWithChildren) => {
   const [queryClient] = useState(() => new QueryClient )
   const [trpcClient] = useState(() => 
