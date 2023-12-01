@@ -12,7 +12,7 @@ import { z } from 'zod';
 export const appRouter = router({
   authCallback: publicProcedure.query(async () => {
     const {getUser} = getKindeServerSession();
-    const user = await getUser();
+    const user =  await getUser();
     
     if (!user?.id || user == null || !user.email)
       throw new TRPCError({ code: 'UNAUTHORIZED' });
