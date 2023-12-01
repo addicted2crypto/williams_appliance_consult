@@ -11,6 +11,7 @@ import { useState } from "react"
 
 
 
+
 // This is the dashboard component that will display the appliances that the user has uploaded
 const Dashboard = () => {
   const[currentlyDeletingFileId, setCurrentlyDeletingFileId] = useState<string | null>(null)
