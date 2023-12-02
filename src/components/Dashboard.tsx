@@ -19,7 +19,7 @@ const Dashboard = () => {
   //userContext is deprecated so i used trpc.useUtils() to get the user
    const utils = trpc.useUtils();
 
-    const {data: files, isLoading, error} = 
+    const {data: files, isLoading} = 
     trpc.getUserFiles.useQuery();
     // trying to hone in with console.logs
     // console.log('Files:', files);
