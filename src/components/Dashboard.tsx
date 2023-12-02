@@ -19,8 +19,11 @@ const Dashboard = () => {
   //userContext is deprecated so i used trpc.useUtils() to get the user
    const utils = trpc.useUtils();
 
-    const {data: files, isLoading} = 
+    const {data: files, isLoading, error} = 
     trpc.getUserFiles.useQuery();
+    // trying to hone in with console.logs
+    // console.log('Files:', files);
+    // console.log('Error:', error);
 
     const { mutate: deleteFile} = trpc.deleteFile.useMutation({
       onSuccess: () => {

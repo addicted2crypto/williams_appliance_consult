@@ -13,6 +13,7 @@ const Page = async () => {
   
  {user? console.log(user.email)  : console.log('no user')};
  {user? console.log(user.id)  : console.log('no user')};
+ 
 
  //this console log returned my kinde user id... i need to sync it to the dbUser id
 

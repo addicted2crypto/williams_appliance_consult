@@ -36,10 +36,12 @@ export const appRouter = router({
   
     return { success: true };
   }),
+
     //get user uploaded files(appliances in db)
     getUserFiles: privateProcedure.query(async ({ ctx }) => {
       const { userId } = ctx
-  
+      
+
       return await db.file.findMany({
         where: {
            userId,
