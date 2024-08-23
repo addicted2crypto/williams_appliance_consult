@@ -16,13 +16,13 @@ const Navbar = () => {
                     <div className="hidden items-center space-x-4 sm:flex hover:bg-slate-300">
                         {/* // todo -> fix log out link */}
                         
-                    {/* <LogoutLink 
+                    <LogoutLink 
                         className={buttonVariants({
                             variant: "ghost",
                             size: "sm",
                         })}>
                             Sign out 
-                            </LogoutLink> */}
+                            </LogoutLink>
                        
                         <Link href="/price"className={buttonVariants({
                             variant: "ghost",
