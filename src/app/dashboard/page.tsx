@@ -32,6 +32,8 @@ const Page = async () => {
      <span>Please log this user to the DB </span>
   
  }
+
+
 // if(!dbUser) redirect('/auth-callback?origin=dashboard');
   
     
