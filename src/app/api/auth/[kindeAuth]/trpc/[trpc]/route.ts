@@ -14,7 +14,7 @@ interface KindeAuthContext {
 const {getUser} = getKindeServerSession();
 const user = await getUser();
 
-console.log(user);
+console.log(user || `${getUser}`);
 
 const handler = (req: Request) =>
   fetchRequestHandler({
