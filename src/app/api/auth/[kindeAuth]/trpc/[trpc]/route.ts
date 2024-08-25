@@ -11,10 +11,14 @@ interface KindeAuthContext {
 //       kindeAuth
 //   };
 // };
+const {getUser} = getKindeServerSession();
+const user = await getUser();
+
+console.log(user);
 
 const handler = (req: Request) =>
   fetchRequestHandler({
-    endpoint: 'api/trpc',
+    endpoint: 'app/api/trpc',
     req,
     router: appRouter,
     createContext: () => ({}),
