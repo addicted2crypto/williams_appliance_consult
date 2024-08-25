@@ -18,7 +18,7 @@ console.log(user || `${getUser}`);
 
 const handler = (req: Request) =>
   fetchRequestHandler({
-    endpoint: 'app/api/trpc',
+    endpoint: '/api/trpc',
     req,
     router: appRouter,
     createContext: () => ({}),
