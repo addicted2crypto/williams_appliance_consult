@@ -1,7 +1,7 @@
 
 import Link from 'next/link'
 
-import { ArrowRight, Divide } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { buttonVariants } from '@/src/components/ui/button'
 import Image from 'next/image'
 import WidthWrapper from '../components/WidthWrapper'

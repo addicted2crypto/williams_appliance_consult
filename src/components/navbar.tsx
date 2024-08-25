@@ -1,11 +1,14 @@
 
 import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components"
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/dist/types/server'
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
 import WidthWrapper from "./WidthWrapper"
 
 const Navbar = () => {
+    const { getUser } = getKindeServerSession()
+    const user = getUser()
     return (
         <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/60 backdrop-blur-lg transition-all">
             <WidthWrapper>
@@ -16,6 +19,9 @@ const Navbar = () => {
                       {/*add logo */}
                     </Link>
                     <div className="hidden items-center space-x-4 sm:flex hover:bg-slate-300">
+                        {!user ? (
+                            <>
+                        
                         <Link href="/price"className={buttonVariants({
                             variant: "ghost",
                             size: "sm"
@@ -35,6 +41,15 @@ const Navbar = () => {
                         })}>
                             Schedule APT<ArrowRight className='ml-3.5 h-4 w-4' />
                         </RegisterLink>
+                        </>
+                        ) : (
+                            <Link 
+                             href='/dashboard'
+                             className={buttonVariants({
+                                variant:'ghost',
+                                size: 'sm',
+                             })}>Dashboard</Link>
+                             )}
                     </div>
                 </div>
             </WidthWrapper>
