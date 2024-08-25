@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-const page = () => {
+const Price = () => {
  
   return (
     <div className='text-center font-extrabold pl-[60] pr-[60] pr-[60]max-w-7xl md:p-10'>Prices vary: For a basic consult $39.99. This will include research on your model number
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Price
