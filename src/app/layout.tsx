@@ -5,6 +5,7 @@ import Navbar from '../components/navbar'
 import Providers from '../components/Providers'
 import './globals.css'
 import "react-loading-skeleton/dist/skeleton.css"
+import { KindeProvider } from '@kinde-oss/kinde-auth-nextjs'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    
+    <KindeProvider>
     <html lang="en" className='light'>
       <Providers>
       <body className={cn(
@@ -33,6 +34,7 @@ export default function RootLayout({
       </body>
       </Providers>
     </html>
+    </KindeProvider>
     
   )
 }
