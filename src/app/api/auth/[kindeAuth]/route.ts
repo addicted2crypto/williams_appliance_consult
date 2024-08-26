@@ -5,9 +5,9 @@ import { NextRequest, NextResponse } from 'next/server'
 
 export async function GET(request: NextRequest, { params }: any): Promise<NextResponse> {
   const endpoint = params.kindeAuth
-  // Make sure handleAuth returns a valid NextResponse or adjust as necessary
+  
   const authResult = await handleAuth(request, endpoint)
-  return NextResponse.json(authResult)
+  return NextResponse.json(request, endpoint)
 }
 
 
